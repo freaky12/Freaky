@@ -27,7 +27,7 @@ $(document).ready(function () {
         return false;
       } 
       else if (!light) {
-        alert("\n Freaky Freaky Choose a Lighten System For Zazzy Now!🙄🙄🙄");
+        alert("\n Freaky Freaky Choose a Lighting System For Zazzy Now!🙄🙄🙄");
         return false;
       } 
       else if (!drink) {
