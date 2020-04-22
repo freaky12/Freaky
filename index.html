@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="logo icon" href="hands.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <title> Freaky Freaky Booking Session </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  </head>
+  <style>
+.jumbotron{
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+ background-blend-mode: multiply,multiply;
+color:whitesmoke;
+font-family: 'Courgette', cursive;
+}
+
+.loader{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courgette', cursive;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 12s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+  </style>
+
+<body>
+  <div class="loader">
+    <h2 class="font-weight-bolder">Freaky! Freaky!! <br> Are You Horngry?</h2> 
+ <img src="licki.webp" style="width: 30em;" alt="Loading..." />
+</div>
+
+
+<div class="container jumbotron">
+<!-- terms and Conditions -->
+    <!-- <div class="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">
+             Terms & Conditions For Freaky Freaky
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+        <div class="modal-body">
+            <p>Welcome To Freaky Freaky Booking Session.  <br>
+               This booking is for <strong>Occasional/Special Freaking!</strong> <br>
+              NB: Dont Misuses it.
+              Thank You.
+            </p>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+        </div>
+    </div>
+</div>
+    </div> -->
+
+    
+<form action="#" class="text-center" id="form">
+  <div id="time">
+    <h2>Fill Out Your Freaky List</h2>
+  <div class="row p-5">
+      <div class="col-12 col-sm-6 col-md-6">
+    <div class="form-group">
+        <label for="freakydate">Date</label>
+          <input class="form-control" type="text" style="background-color: whitesmoke; text-align: center;"  id="freakydate" placeholder="Day/Month" required >
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-6">
+      <div class="form-group">
+        <label for="freakytime">Time</label>
+          <input class="form-control" type="text" style="background-color: whitesmoke; text-align: center;"  id="freakytime" placeholder="5:00 AM" required> 
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+    <div id="sexType">
+        <h5 class="font-weight-bolder">How Do You Want Zazzy To Freaky You Up?</h5>
+        <div class="row sextype p-5">
+          <div class="col-12" >
+        <div class="form-check form-check-inline"><h5>
+        <input class="love form-check-input" type="checkbox"  id="love" value="Make Love To Me" >
+        <label class="form-check-label" for="freakylove">Make Love To me</label></h5>
+      </div>
+
+      <div class="form-check form-check-inline"><h5>
+        <input class="love form-check-input" type="checkbox"  id="fuck" value="fuckme" >
+        <label class="form-check-label" for="freakyfuck">Fuck The Bad Girl Out Of Me</label></h5>
+      </div>
+    </div>
+
+      <div class="col-12">
+      <div class="form-group"><h5>
+        <label for="freakyother" class="text-center">Other(Specify)</label>
+      <input class="form-control"  style="background-color: whitesmoke; text-align: center;"    type="text" id="freakyother" ></h5>
+  </div>
+</div> 
+</div>
+</div>
+
+
+
+<div id="ice">
+    <h5 class="font-weight-bolder">Which Ice Material Do You Want Zazzy To Use?</h5>
+    <div class="row ice p-5">
+      <div class="col-12">
+  <div class="form-check form-check-inline"><h5 >
+    <input class="ice form-check-input" type="checkbox"  id="cubes">
+    <label class="form-check-label" for="cubes">Ice Cubes🧊🧊</label></h5>
+  </div>
+
+  <div class="form-check form-check-inline"><h5 >
+    <input class="ice form-check-input" type="checkbox"  id="cream">
+    <label class="form-check-label" for="icecream">Ice Cream🍦🍦</label></h5>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="dickLick">
+    <h5 class="font-weight-bolder">How Do You Want Zazzy To Freaky You Up?</h5>
+    <div class="row p-5 dicklick">
+      <div class="col-12">
+  <div class="form-check form-check-inline"><h5>
+    <input class="lick form-check-input" type="checkbox"  id="Licking" value="Licking After Dick">
+    <label class="form-check-label" for="cubes">Licking😜 👉 Dicking🥒</label></h5>
+  </div>
+
+  <div class="form-check form-check-inline"><h5>
+    <input class="lick form-check-input" type="checkbox"  id="dick" value="dick">
+    <label class="form-check-label" for="icecream">Dick🥒 👉 Licking😜</label></h5>
+  </div>
+
+
+  <div class="form-check form-check-inline"><h5>
+    <input class="form-check-input" type="checkbox"  id="both" value="both">
+    <label class="form-check-label" for="cubes">Both😜🥒</label></h5>
+  </div>
+</div>
+<div class="col-12">
+
+  <div class="form-group"><h5>
+    <label for="other">Other(Specify)</label>
+  <input class="form-control oT" style="background-color: whitesmoke; text-align: center;"    type="text" id="dicklick" placeholder="Mixture of both and climax with licking "></h5>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="place">
+<h5 class="font-weight-bolder">Where Should Zazzy Freaky You Up?</h5>
+<div class="row p-5 place">
+  <div class="col-12">
+  <div class="form-check form-check-inline"><h5>
+    <input class="place form-check-input" type="checkbox"  id="bed" value="bed">
+    <label class="form-check-label" for="bed">On The Bed🛏️</label></h5>
+  </div>
+
+  <div class="form-check form-check-inline"><h5>
+    <input class="place form-check-input" type="checkbox"  id="table" value="Center Table">
+    <label class="form-check-label" for="table">Center Table</label></h5>
+  </div>
+
+  <div class="form-check form-check-inline"><h5>
+    <input class="place form-check-input" type="checkbox"  id="shower" value="shower">
+    <label class="form-check-label" for="icecream">Bathroom🛁</label></h5>
+  </div>
+
+
+  <div class="form-check form-check-inline"><h5>
+    <input class="place form-check-input" type="checkbox"  id="floor" value="floor">
+    <label class="form-check-label" for="icecream">Floor</label></h5>
+  </div>
+</div>
+
+<div class="col-12">
+  <div class="form-group"><h5>
+    <label for="other">Other(Specify)</label>
+  <input class="form-control oT" style="background-color: whitesmoke; text-align: center;"   type="text" id="placeOther" placeholder="Let`s go fuck on the roof top"></h5>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<div id="light">
+    <h5 class="font-weight-bolder">How Should Zazzy Lighten Up The Place?</h5>
+    <div class="row p-5">
+      <div class="col-12">
+    <div class="form-check form-check-inline">
+      <h5>
+        <input class="light form-check-input" type="checkbox"  id="candle" value="Candle Light">
+        <label class="form-check-label" for="table">Candle Light🕯️</label></h5>
+      </div>
+    
+      <div class="form-check form-check-inline">  <h5>
+        <input class="light form-check-input" type="checkbox"  id="off" value="No Lights">
+        <label class="form-check-label" for="icecream"><h5>No Lights</h5></label></h5>
+      </div>
+    
+    
+      <div class="form-check form-check-inline"> <h5>
+        <input class="light form-check-input" type="checkbox"  id="blight" value="Blue Light">
+        <label class="form-check-label" for="icecream"><h5>Blue Lights💡</h5></label></h5>
+      </div>
+   
+      <div class="form-check form-check-inline"><h5>
+        <input class="light form-check-input" type="checkbox"  id="on" value="Lights On">
+        <label class="form-check-label" for="icecream"><h5>Lights On💡</h5></label></h5>
+      </div>
+</div>
+      
+</div>
+</div>
+
+
+
+<div class="drinks">
+  <h5 class="font-weight-bolder">Which Drink Do You Want Zazzy To Get You?</h3>
+  <div class="row p-5">
+    <div class="col-12">
+  <div class="form-check form-check-inline"><h5>
+      <input class="drink form-check-input" type="checkbox"  id="Wine" value="Wine">
+      <label class="form-check-label" for="table">Wine🍷</label></h5>
+    </div>
+  
+    <div class="form-check form-check-inline"><h5>
+      <input class="drink form-check-input" type="checkbox"  id="Beer" value="Beer">
+      <label class="form-check-label" for="icecream">Beer🍺</label></h5>
+    </div>
+  
+  
+    <div class="form-check form-check-inline"><h5>
+      <input class="drink form-check-input" type="checkbox"  id="liquor" value="Liquor">
+      <label class="form-check-label" for="icecream">Liquor🥃</label></h5>
+    </div>
+
+    <div class="form-check form-check-inline"><h5>
+      <input class="drink form-check-input" type="checkbox"  id="soft" value="Soft Drinks">
+      <label class="form-check-label" for="icecream">Soft Drinks🍹</label></h5>
+    </div>
+
+    <div class="form-check form-check-inline"><h5>
+      <input class="drink form-check-input" type="checkbox"  id="mixture" value="Mixture Of Soft and Hard">
+      <label class="form-check-label" for="icecream">Mixture Of Soft and Hard🥃🍹🍹🥃</label></h5>
+    </div>
+  </div>
+
+    <div class="col-12">
+
+    <div class="form-group"><h5>
+      <label for="other">Other(Specify)</label>
+    <input class="form-control oT" style="background-color: whitesmoke; text-align: center;"   type="text" id="drinkS" placeholder="You want a Specific Drink"></h5>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<div class="music">
+    <h5 class="font-weight-bolder">Which Song Do You Want Zazzy To Play?</h5>
+    <div class="row p-5">
+      <div class="col-12">
+    <div class="form-check form-check-inline"><h5>
+        <input class="music form-check-input" type="checkbox"  id="romantic" value="romantic songs">
+        <label class="form-check-label" for="table">Romantic Songs</label></h5>
+      </div>
+    
+      <div class="form-check form-check-inline"><h5>
+        <input class="music form-check-input" type="checkbox"  id="Hip-pop" value="Hip-Pop/Afro Breats">
+        <label class="form-check-label" for="icecream">Hip-Pop/Afro Breats</label></h5>
+      </div>
+    
+    
+      <div class="form-check form-check-inline"><h5>
+        <input class="music form-check-input" type="checkbox"  id="any" value="Any Music">
+        <label class="form-check-label" for="icecream">Any Music</label></h5>
+      </div>
+
+      <div class="form-check form-check-inline"><h5>
+        <input class="music form-check-input" type="checkbox"  id="nomusic" value="No Music">
+        <label class="form-check-label" for="icecream">No Music</label></h5>
+      </div>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="food">
+    <h5 class="font-weight-bolder">Do You Want Zazzy To Cook For You/Get It For You?</h5>
+    <div class="row p-5">
+      <div class="col-12">
+    <div class="form-check form-check-inline"><h5>
+        <input class="food form-check-input" type="checkbox"  id="buyFood" value="Buy The Food For Me">
+        <label class="form-check-label" for="table">Buy The Food For Me🚚🍱</label></h5>
+      </div>
+    
+      <div class="form-check form-check-inline"><h5>
+        <input class="food form-check-input" type="checkbox"  id="cookFood" value="Cook For Me">
+        <label class="form-check-label" for="icecream">Cook For Me Zazzy🍱</label></h5>
+      </div>
+
+      <div class="form-check form-check-inline"><h5>
+        <input class="food form-check-input" type="checkbox"  id="okay" value="I`m Okay">
+        <label class="form-check-label" for="icecream">I`m Okay🤗</label></h5>
+      </div>
+    </div>
+
+        <div class="col-12">
+      <div class="form-group"><h5>
+        <label for="other">Other(Specify)</label>
+      <input class="form-control oT" style="background-color: whitesmoke; text-align: center;"    type="text" id="foodS" placeholder="Specific Food You want"></h5>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+<div>
+  <textarea style="background-color: whitesmoke; text-align: center;" name="freaky Details" id="freakyD" cols="50" rows="10" placeholder="Type In Your Freaky Details Here"></textarea>
+</div>
+
+<div>
+<p>
+  <strong> Thanks For Filling Out this Form Freaky Freaky! <br> 
+  Zazzy Wants To know That You Have Filled Out this Form. <br>
+  So He Can Let Your Dreams come True <br>
+  So Choose A Code Name And Send It to Zazzy So He Can Check it Out
+</strong>
+  </p>
+  <h4>
+  <label for="codename">Code Name:</label>
+  <input type="text" name="Code" id="codeName"  style="background-color: whitesmoke; text-align: center;" placeholder="Eg:Sexy Cowboy/Tarzan of Pussy" required>
+</h4></div>
+
+
+<button type="submit" id="freaky" class="btn btn-primary btn-lg m-5">
+Submit
+</button>
+
+
+
+      </form>
+
+
+  </div>
+</body>
+<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./bootstrap.bundle.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+<script src="app.js"></script>
+<script src="dowell.js"></script>
+
+</html>
